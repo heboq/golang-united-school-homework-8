@@ -129,6 +129,7 @@ func Perform(args Arguments, writer io.Writer) error {
 		return nil
 
 	default:
+		//! It has to be like that due to the task requirement
 		return fmt.Errorf("Operation %s not allowed!", args["operation"])
 	}
 
